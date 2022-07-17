@@ -1,0 +1,100 @@
+.headline {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 36px;
+
+  @include for-desktop {
+    position: relative;
+    display: flex;
+    margin: auto;
+    flex-direction: column;
+    width: 1140px;
+    padding-bottom: 77px;
+  }
+
+  &__text {
+    margin: 0px 15px 33px 15px;
+    @include for-desktop {
+      position: absolute;
+      margin: 0px;
+      left: 0;
+      z-index: 1;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 50px;
+    letter-spacing: -0.3125px;
+    @include for-desktop {
+      width: 754px;
+      height: 165px;
+      font-weight: 700;
+      font-size: 80px;
+      line-height: 78px;
+      letter-spacing: -0.5px;
+    }
+  }
+
+  &__description {
+    margin-top: 24px;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 34px;
+    @include for-desktop {
+      margin-bottom: 0;
+      margin-top: 34px;
+      width: 465px;
+      height: 102px;
+    }
+  }
+
+  &__banner {
+    width: 320px;
+    height: 180px;
+    @include for-desktop {
+      position: relative;
+      display: block;
+      left: 105px;
+      margin-top: 0;
+      margin-left: auto;
+      width: 796px;
+      height: 448px;
+    }
+  }
+  &__button {
+    margin-top: 30px;
+    width: 100%;
+    @include for-desktop {
+      margin-top: 58px;
+    }
+  }
+}
+
+.headline-actions {
+  display: flex;
+  flex-direction: column;
+  @include for-desktop {
+    flex-direction: row;
+  }
+
+  &__button:last-child {
+    margin-top: 15px;
+    @include for-desktop {
+      margin-top: 0px;
+      width: 158px;
+      margin-left: 10px;
+    }
+  }
+
+  &__button {
+    width: 100%;
+    @include for-desktop {
+      width: 160px;
+    }
+  }
+}

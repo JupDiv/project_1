@@ -1,0 +1,119 @@
+.color-section {
+  background-color: $light-peach;
+  @include for-desktop {
+    padding-top: 39px;
+  }
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 64px;
+  background-color: $white;
+  @include for-desktop {
+    margin: auto;
+    width: 1140px;
+    height: 62px;
+    align-items: center;
+    margin-bottom: 84px;
+    background-color: $light-peach;
+  }
+
+  &__menu-button {
+    margin-left: auto;
+    width: 58px;
+    border: none;
+    background-color: $white;
+    border-left: 1px solid $dark-black-15;
+    @include for-desktop {
+      display: none;
+    }
+  }
+
+  &__button {
+    display: none;
+    @include for-desktop {
+      display: block;
+    }
+  }
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  @include for-desktop {
+  }
+
+  &__image {
+    width: 48px;
+    height: 48px;
+    margin: 8px 13px 8px 15px;
+    @include for-desktop {
+      margin: 0;
+      margin-left: 15px;
+      margin-right: 15px;
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  &__text {
+    @include for-desktop {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__name {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    color: $dark-black;
+  }
+
+  &__description {
+    display: none;
+    @include for-desktop {
+      display: block;
+      font-size: 18px;
+      line-height: 25px;
+      color: $dark-black-60;
+    }
+  }
+}
+
+.navigation {
+  display: none;
+}
+@include for-desktop {
+  .navigation {
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 7px;
+    margin-right: 75px;
+
+    &__item {
+      margin-right: 50px;
+      list-style: none;
+      text-decoration: none;
+      font-size: 18px;
+      line-height: 25px;
+      color: $dark-black;
+    }
+    &__item:last-child {
+      margin-right: 0px;
+    }
+
+    &__item_selected {
+      font-weight: 700;
+    }
+    &__arrow {
+      display: inline-block;
+      margin-left: 11px;
+      width: 8px;
+      height: 5px;
+      background-image: url('https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson24/hw1/arrow.png');
+    }
+  }
+}

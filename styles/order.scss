@@ -1,0 +1,97 @@
+.order {
+  padding: 50px 15px;
+  background-color: $color-white-gray;
+  @include for-desktop {
+    padding: 73px 0 72px 0;
+    display: flex;
+    justify-content: center;
+  }
+  &__illustration {
+    max-width: 200px;
+
+    @include for-mobile {
+      display: block;
+      margin: auto;
+    }
+
+    @include for-desktop {
+      max-width: 269px;
+      margin-right: 121px;
+    }
+  }
+
+  &__details {
+    @include for-desktop {
+      max-width: 555px;
+    }
+  }
+
+  &__title {
+    margin: 0;
+    margin-top: 40px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    letter-spacing: -0.25px;
+  }
+
+  &__text {
+    margin: 0;
+    margin-top: 18px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 32px;
+  }
+
+  &__form {
+    @include for-desktop {
+      display: flex;
+      margin-top: 26px;
+    }
+  }
+
+  &__email {
+    margin-top: 40px;
+    height: 48px;
+    background: $white;
+    border: 1px solid $border-color;
+    border-radius: 2px;
+    width: 100%;
+    font-size: 18px;
+    line-height: 13px;
+    text-align: center;
+
+    &::placeholder {
+      color: $dark-text;
+    }
+    @include for-desktop {
+      margin: 0;
+    }
+  }
+
+  &__button {
+    margin-top: 10px;
+    @include for-mobile {
+      width: 100%;
+    }
+    @include for-desktop {
+      margin: 0;
+      margin-left: 10px;
+      width: 160px;
+      flex-shrink: 0;
+    }
+  }
+
+  &__terms {
+    margin: 0;
+    margin-top: 10px;
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-color-gray;
+  }
+
+  &__terms-link {
+    color: $light2-blue;
+  }
+}

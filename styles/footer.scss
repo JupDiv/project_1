@@ -1,0 +1,185 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  @include for-desktop {
+    width: 100%;
+  }
+
+  &__content {
+    @include for-desktop {
+      display: flex;
+      width: 1140px;
+      margin: auto;
+    }
+  }
+
+  &__up {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include for-desktop {
+      flex-direction: row;
+    }
+  }
+
+  &__logo {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__image-logo {
+    width: 60px;
+    height: 60px;
+  }
+
+  &__title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 25px;
+    color: $dark-black;
+
+    @include for-desktop {
+      align-items: flex-start;
+      margin-top: 0px;
+      margin-left: 15px;
+    }
+  }
+
+  &__undertitle-text {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25px;
+    color: $dark-black-60;
+  }
+
+  &__description {
+    display: none;
+    @include for-desktop {
+      display: block;
+      margin: 0;
+      margin-top: 30px;
+      width: 360px;
+      height: 85px;
+      font-size: 18px;
+      line-height: 26px;
+      color: $dark-black-60;
+    }
+  }
+
+  &__line-mobile {
+    margin-top: 40px;
+    border-top: $light-gray 1px solid;
+  }
+
+  &__nav {
+    @include for-desktop {
+      display: flex;
+      margin: auto;
+      margin-top: 60px;
+    }
+  }
+  &__downloads-icons {
+    display: flex;
+    justify-content: center;
+    margin-top: 31px;
+    @include for-desktop {
+      justify-content: flex-start;
+    }
+  }
+  &__downloads-item:last-child {
+    margin-left: 11px;
+  }
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  width: 1140px;
+
+  @include for-desktop {
+    flex-direction: row;
+    align-items: center;
+    margin: auto;
+    height: 50px;
+  }
+
+  &__content {
+    display: flex;
+  }
+
+  &__item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: $text-color-gray;
+    list-style: none;
+    text-decoration: none;
+    margin-right: 15px;
+  }
+}
+
+.footer-social {
+  margin: 31px 0px 23px 0px;
+  display: flex;
+  margin-right: auto;
+  @include for-desktop {
+    margin: 0px;
+    margin-left: auto;
+  }
+
+  &__link {
+    margin-right: 20px;
+  }
+}
+
+.nav-links {
+  &__name {
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 30px;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 28px;
+    @include for-desktop {
+      margin: 0;
+    }
+  }
+  &__list {
+    padding: 0px;
+    margin-top: 18px;
+    margin-left: 15px;
+    margin-right: 15px;
+    list-style: none;
+    @include for-desktop {
+      margin: 0px;
+      width: 265px;
+    }
+  }
+
+  &__list-elem {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(43, 41, 45, 0.6);
+  }
+  @include for-desktop {
+    .footer-line-desktop {
+      margin-top: 47px;
+      border-top: 1px solid $dark-black-10;
+    }
+  }
+}
+
+//I don't understand why this property not working with &__:last-child
+.nav-links:last-child {
+  @include for-desktop {
+    margin-left: 29px;
+  }
+}
