@@ -18,7 +18,7 @@
       font-weight: 700;
       font-size: 22px;
       line-height: 34px;
-      color: #009b4d;
+      color: $light-green;
     }
     &__title {
       margin: 0;
@@ -61,7 +61,7 @@
       display: flex;
       margin-top: 21px;
       padding-bottom: 20px;
-      border-bottom: 1px solid #2b292d26;
+      border-bottom: 1px solid $border-black;
       mix-blend-mode: normal;
     }
     &__item-text {
