@@ -1,6 +1,6 @@
-# project_1
+# Foundation Layout
 
-<h1><a href="https://github.com/JupDiv">Foundation Layout</a></h1>
+<h1><a href="https://github.com/JupDiv">Site link</a></h1>
 
 Layout supports mobile (up-to-400) and desktop (up-to-1400) versions
 
